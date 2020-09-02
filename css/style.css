@@ -1,17 +1,18 @@
 /* Colors and fonts */
 @font-face {
-  font-family: '8-bit-pusab';
-  src: url('8-bit-pusab.ttf');
+  font-family: 'MaSuperPolice';
+  src: url('MaSuperPolice.eot');
 }
 
 body {
-    background: #ffffff;
-    font-family: '8-bit-pusab';
+    background: #F7F9FC;
+    color: #575F7D;
+    font-family: 'Arcade Interlaced', serif;
     font-size: 17px;
     font-weight: lighter;
   }
   h1, h2, h3 {
-    font-family: '8-bit-pusab';
+    font-family: 'Arcade Interlaced', sans-serif;
   }
   h1 {
     color: #575F7D;
@@ -25,14 +26,14 @@ body {
     font-weight: 500;
   }
   a {
-    font-family: '8-bit-pusab';
+    font-family: 'Arcade Interlaced', sans-serif;
     text-decoration: none;
-    color: black;
+    color: #6B72E1;
     font-weight: 600;
     font-size: 16px;
   }
   a:hover {
-    color: rgb(32, 30, 30);
+    color: black;
   }
   
   
