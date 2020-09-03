@@ -1,8 +1,8 @@
 /* Colors and fonts */
 /* --- Import Components stylesheets --- */
-@import url("components/avatar.css");
-@import url("components/container.css");
-@import url("components/button.css");
+@import url("css/components/avatar.css");
+@import url("css/components/container.css");
+@import url("css/components/button.css");
 
   h1, h2, h3 {
     font-family: 'Roboto';
@@ -15,7 +15,6 @@
   h2 {
     color: #7ECE90;
     font-size: 20px;
-    font-weight: lighter;
     font-weight: 500;
   }
   a {
