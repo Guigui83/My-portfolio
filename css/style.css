@@ -113,17 +113,23 @@ nav{
 
 /* Home */
 
-.container { 
+.container{ 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.introduction {
-  padding-top: 100px;
+.container .introduction{
+  padding-top: 150px;
   height: 500px;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 30px;
+}
+
+.container .pager{
+  cursor: pointer;
+  flex-grow:0;
+  flex-shrink:0;
 }
