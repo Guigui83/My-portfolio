@@ -1,21 +1,23 @@
 /* Navbar */
-
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-logo{
+/* Logo avatar 
+logo a:hover, a:visited, a:active{
   color: #000000;
-  cursor: pointer;
-  text-decoration: none; 
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.logo :hover{
-  color: #666666;
-  cursor: pointer;
-}
+  .logo :hover{
+    color: #666666;
+    cursor: pointer;
+  }
+*/
 
 nav{
   display: flex;
@@ -26,40 +28,40 @@ nav{
   font-family: 'Poppins', sans-serif;
 }
 
-.nav-links{
-  display: flex;
-  justify-content: space-around;
-  width: 30%;
-}
+  .nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }
 
-.nav-links li{
- list-style: none;
-}
+  .nav-links li{
+  list-style: none;
+  }
 
-.nav-links a{
-  color: black;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 14px;;
-}
+  .nav-links a{
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+  }
 
-.nav-links a:hover{
-  color: #666666;
-}
+  .nav-links a:hover{
+    color: #666666;
+  }
 
-.burger{
-  display: none;
-  cursor: pointer;
-}
+  .burger{
+    display: none;
+    cursor: pointer;
+  }
 
-.burger div{
-  width: 25px;
-  height: 3px;
-  background-color:#000000;
-  margin: 5px;
-  transition: all 0.3s ease;
-}
+  .burger div{
+    width: 25px;
+    height: 3px;
+    background-color:#000000;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
 
 @media screen and (max-width: 1024px){
   .nav-links{
@@ -92,9 +94,10 @@ nav{
   }
 }
 
-.nav-active{
-  transform: translateX(0%);
-}
+  .nav-active{
+    transform: translateX(0%);
+    opacity: 0.9;
+  }
 
 @keyframes navLinkFade{
   from{
@@ -137,10 +140,33 @@ nav{
 
 .home .pager{
   cursor: pointer;
+  padding-bottom: 260px;
  }
 
  /* Work */
-
+.work{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: aqua;
+  height: 1500px;
+}
  /* About */
-
+.about{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(255, 0, 212);
+  height: 1500px;
+}
  /* Contact */
+.contact{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(0, 255, 13);
+  height: 1500px;
+}
