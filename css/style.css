@@ -6,7 +6,13 @@
   box-sizing: border-box;
 }
 
-.avatar:hover{
+logo{
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none; 
+}
+
+.logo :hover{
   color: #666666;
   cursor: pointer;
 }
@@ -113,14 +119,14 @@ nav{
 
 /* Home */
 
-.container{ 
+.home{ 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.container .introduction{
+.home .introduction{
   padding-top: 150px;
   height: 300px;
   text-align: center;
@@ -129,6 +135,12 @@ nav{
   font-size: 30px;
 }
 
-.container .pager{
+.home .pager{
   cursor: pointer;
  }
+
+ /* Work */
+
+ /* About */
+
+ /* Contact */
