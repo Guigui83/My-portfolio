@@ -117,11 +117,12 @@ nav{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .container .introduction{
   padding-top: 150px;
-  height: 500px;
+  height: 300px;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
@@ -130,6 +131,4 @@ nav{
 
 .container .pager{
   cursor: pointer;
-  flex-grow:0;
-  flex-shrink:0;
-}
+ }
