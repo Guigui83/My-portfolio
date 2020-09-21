@@ -29,15 +29,14 @@ nav{
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
 }
-  .fa-arrow-up {
-  cursor: pointer;
-  color: #000000;
+  .fa-arrow-up{
+    color: #000000;
   }
 
-  .fa-arrow-up :hover{
+  .fa-arrow-up:hover{
     color: #666666;
   }
-  
+
   .nav-links{
     display: flex;
     justify-content: space-around;
@@ -45,7 +44,7 @@ nav{
   }
 
   .nav-links li{
-  list-style: none;
+    list-style: none;
   }
 
   .nav-links a{
