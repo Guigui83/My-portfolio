@@ -149,7 +149,7 @@ nav{
 
 .home .pager{
   cursor: pointer;
-  padding-bottom: 260px;
+  padding-bottom: 320px;
  }
 
  /* Work */
@@ -159,7 +159,7 @@ nav{
   justify-content: center;
   flex-direction: column;
   background-color: aqua;
-  height: 1500px;
+  height: 1000px;
 }
  /* About */
 .about{ 
