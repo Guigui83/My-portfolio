@@ -1,32 +1,19 @@
-/* Navbar */
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-/* Logo avatar 
-logo a:hover, a:visited, a:active{
-  color: #000000;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-  .logo :hover{
-    color: #666666;
-    cursor: pointer;
-  }
-*/
+/* Scroll Back To Top Button */
 
 .fa-arrow-up{
   color: #000000;
-  cursor: pointer;
 }
 
 .fa-arrow-up:hover{
   color: #666666;
   cursor: pointer;
+}
+
+/* Navbar */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 nav{
