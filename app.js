@@ -1,4 +1,4 @@
-//Mobile Navbar
+//MOBILE NAVBAR
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -24,7 +24,7 @@ const navSlide = () => {
 
 navSlide();
 
-//Scroll Back To Top Button
+//SCROLL BACK TO TOP BUTTON
 
 //Get the button:
 mybutton = document.getElementById("fas fa-arrow-up");
