@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Motorola ScreenType";
+  src: url('/MotorolaScreentype.ttf') format('truetype'),
+}
+
 /* SCROLL BACK TO TOP BUTTON */
 
 .fa-arrow-up{
@@ -66,6 +71,7 @@ nav{
   .nav-links{
     width: 60%;
   }
+
 }
 
 @media screen and (max-width: 768px){
@@ -130,18 +136,46 @@ nav{
 
 .home .introduction{
   padding-top: 150px;
-  height: 250px;
+  height: 270px;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 30px;
 }
 
+.pager-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .pager{
   cursor: pointer;
-  padding-bottom: 320px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 300px;
  }
 
+.pager .pager-status{
+  font-family: 'MotorolaScreentype';
+  color: #2c401a;
+  font-size: 22px;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pager .pager-date{
+  font-family: 'MotorolaScreentype';
+  color: #2c401a;
+  font-size: 22px;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
  /* Work */
 .work{ 
   display: flex;
