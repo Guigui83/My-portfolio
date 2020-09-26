@@ -45,3 +45,10 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//DATE + HOURS PAGER
+const d = new Date();
+const date = d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();
+const hours = d.getHours() + ":" + d.getMinutes();
+const fullDate = date+' '+hours;
+console.log(fullDate);

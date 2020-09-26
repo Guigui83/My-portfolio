@@ -12,7 +12,7 @@
 <body>
   <!--NAVBAR-->
   <nav>
-    <div class= "fas fa-arrow-up" href="#home" button onclick="topFunction()" id="fas fa-arrow-up" title="Go to top" display= "none"></div>
+    <div class="fas fa-arrow-up" href="#home" button onclick="topFunction()" id="fas fa-arrow-up" title="Go to top" display="none"></div>
     <ul class="nav-links">
       <li>
         <a href="#work">Work</a>
@@ -39,16 +39,25 @@
     <div class="introduction">
       <h2>Hi, I'm Guillaume</h2><p>a Montreal based front-end web developer.
     </div>
-      <div class="pager-container">
-        <div class="pager">
-          <div class="pager-status">Looking for front-end missions..</div>
-          <div class="pager-date">09/25/2020    8:56 AM</div>
-          <a href="https://www.linkedin.com/in/guillaumemtl" target="_blank">
-          <img src="https://zupimages.net/up/20/39/tgbx.png" alt="What's new?" width= 600px height= 400px></img>
-          </a>
+    <div class="pager-container">
+      <div class="pager">
+        <div class="pager-status">Looking for front-end jobs..</div>
+        <div class="date">
+          <script type="text/javascript">
+            const ladate=new Date()
+            const h=ladate.getHours();
+            if (h<10) {h = "0" + h}
+            const m=ladate.getMinutes();
+            if (m<10) {m = "0" + m}            
+            document.write(h+":"+m)
+          </script>
         </div>
-      </div>  
-    </div>
+        <a href="https://www.linkedin.com/in/guillaumemtl" target="_blank">
+        <img src="https://zupimages.net/up/20/39/tgbx.png" alt="What's new?" width= 600px height= 400px></img>
+        </a>
+      </div>
+    </div>  
+  </div>
   
   <!--WORK-->
   <div class="work" id="work">

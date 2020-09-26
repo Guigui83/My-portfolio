@@ -167,7 +167,7 @@ nav{
   transform: translate(-50%, -50%);
 }
 
-.pager .pager-date{
+.pager .date{
   font-family: 'MotorolaScreentype';
   color: #2c401a;
   font-size: 22px;
@@ -176,6 +176,7 @@ nav{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
  /* Work */
 .work{ 
   display: flex;
