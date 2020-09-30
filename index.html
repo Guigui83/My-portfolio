@@ -42,7 +42,7 @@
     <div class="pager-container">
       <div class="pager">
         <div class="pager-status">Looking for front-end jobs...</div>
-        <div class="date">
+        <!--div class="clock">
           <script type="text/javascript">
             const ladate=new Date()
             const h=ladate.getHours();
@@ -51,7 +51,13 @@
             if (m<10) {m = "0" + m}            
             document.write(h+":"+m)
           </script>
-        </div>
+        </div-->
+        <div class="date">
+          <script type="text/javascript">
+            const date = new Date();
+            document.write(date.toLocaleString()+' ');
+          </script>
+        </div>  
         <a href="https://www.linkedin.com/in/guillaumemtl" target="_blank">
         <img src="https://zupimages.net/up/20/39/tgbx.png" alt="What's new?" width= 600px height= 400px></img>
         </a>
