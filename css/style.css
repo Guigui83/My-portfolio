@@ -167,7 +167,18 @@ nav{
   transform: translate(-50%, -50%);
 }
 
-.pager .clock{
+/*.pager .clock{
+  font-family: 'MotorolaScreentype';
+  color: #2c401a;
+  font-size: 22px;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+*/
+
+.pager .date{
   font-family: 'MotorolaScreentype';
   color: #2c401a;
   font-size: 22px;
