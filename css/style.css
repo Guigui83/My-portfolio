@@ -134,7 +134,7 @@ nav{
   flex-direction: column;
 }
 
-.home .introduction{
+.introduction{
   padding-top: 150px;
   height: 270px;
   text-align: center;
@@ -143,48 +143,32 @@ nav{
   font-size: 30px;
 }
 
-.pager-container{
+.container{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-family: 'MotorolaScreentype';
 }
 
-.pager{
-  cursor: pointer;
-  position: relative;
+.pager-img{
   text-align: center;
   margin-bottom: 300px;
  }
 
-.pager .pager-status{
-  font-family: 'MotorolaScreentype';
+.status{
   color: #2c401a;
   font-size: 22px;
-  position: absolute;
-  top: 36%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
-.pager .date{
-  font-family: 'MotorolaScreentype';
+.date{
   color: #2c401a;
   font-size: 22px;
-  position: absolute;
-  top: 46%;
-  left: 60%;
-  transform: translate(-50%, -50%);
 }
 
-.pager .time{
-  font-family: 'MotorolaScreentype';
+.time{
   color: #2c401a;
   font-size: 22px;
-  position: absolute;
-  top: 46%;
-  left: 40%;
-  transform: translate(-50%, -50%);
 }
 
  /* WORK */
