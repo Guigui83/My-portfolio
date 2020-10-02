@@ -143,19 +143,26 @@ nav{
   font-size: 30px;
 }
 
-.container{
+.infos{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   font-family: 'MotorolaScreentype';
+  
 }
 
 .pager-img{
   text-align: center;
   margin-bottom: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
  }
 
+
+ 
 .status{
   color: #2c401a;
   font-size: 22px;
