@@ -125,7 +125,7 @@ nav{
   transform: rotate(45deg) translate(-5px,-6px);
 }
 
-/* Home */
+/* HOME */
 
 .home{ 
   display: flex;
@@ -187,7 +187,7 @@ nav{
   transform: translate(-50%, -50%);
 }
 
- /* Work */
+ /* WORK */
 .work{ 
   display: flex;
   align-items: center;
@@ -205,7 +205,7 @@ nav{
   font-weight: bold;
   font-size: 30px;
 }
- /* About */
+ /* ABOUT */
 .about{ 
   display: flex;
   align-items: center;
@@ -223,7 +223,7 @@ nav{
   font-weight: bold;
   font-size: 30px;
 }
- /* Contact */
+ /* CONTACT */
 .contact{ 
   display: flex;
   align-items: center;
