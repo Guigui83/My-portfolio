@@ -167,13 +167,23 @@ nav{
   transform: translate(-50%, -50%);
 }
 
-.pager .current_date{
+.pager .date{
   font-family: 'MotorolaScreentype';
   color: #2c401a;
   font-size: 22px;
   position: absolute;
   top: 46%;
-  left: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.pager .time{
+  font-family: 'MotorolaScreentype';
+  color: #2c401a;
+  font-size: 22px;
+  position: absolute;
+  top: 46%;
+  left: 40%;
   transform: translate(-50%, -50%);
 }
 

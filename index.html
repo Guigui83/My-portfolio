@@ -42,12 +42,20 @@
     <div class="pager-container">
       <div class="pager">
         <div class="pager-status">Looking for front-end jobs...</div>
-        <div class="current_date">
+        <div class="date">
           <p id="today"></p>
           <script type="text/javascript">
             const today = new Date();
-            const date = (today.getMonth()+1)+'/'+today.getDate()+'/'+today.getFullYear();
+            const date = today.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: '2-digit' });
             document.getElementById("today").innerHTML = date;
+          </script>
+        </div>
+        <div class="time">
+          <p id="time"></p>
+          <script type="text/javascript">
+            const time = new Date();
+            const clock = time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+            document.getElementById("time").innerHTML = clock;
           </script>
         </div>
         <a href="https://www.linkedin.com/in/guillaumemtl" target="_blank">
