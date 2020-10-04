@@ -126,7 +126,7 @@ nav{
 }
 
 /* HOME */
-home{ 
+.home{ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,45 +134,45 @@ home{
   height: 930px;
 }
 
-  .introduction{
-    padding-top: 150px;
-    height: 270px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-  }
+.introduction{
+  padding-top: 150px;
+  height: 270px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
 
-  .infos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-family: 'MotorolaScreentype'; 
-  }
+.infos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'MotorolaScreentype'; 
+}
 
-  .pager-img{
-    text-align: center;
-  }
+.status{
+  color: #2c401a;
+  font-size: 22px;
+  margin-top: 20px;
+}
 
-  .infos .status{
-    color: #2c401a;
-    font-size: 22px;
-    margin-top: 20px;
-  }
+.date{
+  color: #2c401a;
+  font-size: 22px;
+}
 
-  .date{
-    color: #2c401a;
-    font-size: 22px;
-  }
+.time{
+  color: #2c401a;
+  font-size: 22px;
+}
 
-  .time{
-    color: #2c401a;
-    font-size: 22px;
-  }
+.pager-img{
+  text-align: center;
+}
 
 /* WORK */
-work{ 
+.work{ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,17 +181,17 @@ work{
   height: 1000px;
 }
 
-  .work .introduction{
-    padding-top: 150px;
-    height: 270px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-  }
+.work .introduction{
+  padding-top: 150px;
+  height: 270px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
  
 /* ABOUT */
-about{ 
+.about{ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,17 +200,17 @@ about{
   height: 1000px;
 }
 
-  .about .introduction{
-    padding-top: 150px;
-    height: 270px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-  }
+.about .introduction{
+  padding-top: 150px;
+  height: 270px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
 
 /* CONTACT */
-contact{ 
+.contact{ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,11 +218,11 @@ contact{
   background-color: rgb(0, 255, 13);
   height: 1000px;
 }
-  .contact .introduction{
-    padding-top: 150px;
-    height: 270px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-  }
+.contact .introduction{
+  padding-top: 150px;
+  height: 270px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
