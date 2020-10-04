@@ -3,6 +3,12 @@
   src: url('/MotorolaScreentype.ttf') format('truetype'),
 }
 
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 /* SCROLL BACK TO TOP BUTTON */
 
 .fa-arrow-up{
@@ -15,12 +21,6 @@
 }
 
 /* NAVABR */
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
 nav{
   display: flex;
   position: fixed;
@@ -169,6 +169,7 @@ nav{
 
 .pager-img{
   text-align: center;
+  height: auto;
 }
 
 /* WORK */
@@ -177,7 +178,7 @@ nav{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: aqua;
+  background: aqua;
   height: 1000px;
 }
 
@@ -187,7 +188,7 @@ nav{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(255, 0, 212);
+  background: rgb(255, 0, 212);
   height: 1000px;
 }
 
@@ -197,6 +198,6 @@ nav{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(0, 255, 13);
+  background: rgb(0, 255, 13);
   height: 1000px;
 }
