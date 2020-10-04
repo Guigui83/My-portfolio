@@ -135,8 +135,8 @@ nav{
 }
 
 .introduction{
-  padding-top: 150px;
-  height: 270px;
+  padding-top: 100px;
+  height: 210px;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
@@ -154,17 +154,22 @@ nav{
 .status{
   color: #2c401a;
   font-size: 22px;
-  margin-top: 20px;
+  position: absolute;
+  top: 500px;
 }
 
 .date{
   color: #2c401a;
   font-size: 22px;
+  position: absolute;
+  top: 540px;
 }
 
 .time{
   color: #2c401a;
   font-size: 22px;
+  position: absolute;
+  top: 540px;
 }
 
 .pager-img{
