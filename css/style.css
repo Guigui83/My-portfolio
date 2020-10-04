@@ -181,15 +181,6 @@ nav{
   height: 1000px;
 }
 
-.work .introduction{
-  padding-top: 150px;
-  height: 270px;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-}
- 
 /* ABOUT */
 .about{ 
   display: flex;
@@ -200,15 +191,6 @@ nav{
   height: 1000px;
 }
 
-.about .introduction{
-  padding-top: 150px;
-  height: 270px;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-}
-
 /* CONTACT */
 .contact{ 
   display: flex;
@@ -217,12 +199,4 @@ nav{
   flex-direction: column;
   background-color: rgb(0, 255, 13);
   height: 1000px;
-}
-.contact .introduction{
-  padding-top: 150px;
-  height: 270px;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  font-size: 30px;
 }
