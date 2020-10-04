@@ -135,13 +135,21 @@ nav{
   height: 930px;
 }
 
+.home>.introduction{
+  position: absolute;
+  top: 260px;
+}
+
 .introduction{
-  padding-top: 70px;
-  height: 20px;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 28px;
+}
+
+.pager-img{
+  text-align: center;
+  height: 300px;
 }
 
 .status,.date,.time{
@@ -166,11 +174,6 @@ nav{
   position: relative;
   top: 195px;
   right: 60px;
-}
-
-.pager-img{
-  text-align: center;
-  
 }
 
 /* WORK */
