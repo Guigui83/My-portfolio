@@ -136,45 +136,40 @@ nav{
 
 .introduction{
   padding-top: 100px;
-  height: 210px;
+  height: 20px;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 28px;
 }
 
-.infos{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-family: 'MotorolaScreentype'; 
+.status,.date,.time{
+  font-family: 'MotorolaScreentype';
+  color: #2c401a;
+  font-size: 22px;
 }
 
 .status{
-  color: #2c401a;
-  font-size: 22px;
-  position: absolute;
-  top: 500px;
+  text-align: center;
+  position: relative;
+  top: 210px;
 }
 
 .date{
-  color: #2c401a;
-  font-size: 22px;
-  position: absolute;
-  top: 540px;
+  position: relative;
+  top: 220px;
+  left: 60px;
 }
 
 .time{
-  color: #2c401a;
-  font-size: 22px;
-  position: absolute;
-  top: 540px;
+  position: relative;
+  top: 195px;
+  right: 60px;
 }
 
 .pager-img{
   text-align: center;
-  height: auto;
+  
 }
 
 /* WORK */

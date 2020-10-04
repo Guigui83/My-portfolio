@@ -37,32 +37,28 @@
   <!--HOME-->
   <div class="home" id="home">
     <div class="introduction">
-      <h2>Hi, I'm Guillaume</h2><p>a Montreal based front-end web developer.
+      <h3>Hi, I'm Guillaume</h3><p>a Montreal based front-end web developer.
     </div>
-    <div class="container-pager">
-      <div class="infos">
-        <div class="status">Looking for front-end jobs...</div>
-        <div class="date">
-          <p id="today"></p>
-          <script type="text/javascript">
-            const today = new Date();
-            const date = today.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: '2-digit' });
-            document.getElementById("today").innerHTML = date;
-          </script>
-        </div>
-        <div class="time">
-          <p id="time"></p>
-          <script type="text/javascript">
-            const time = new Date();
-            const clock = time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-            document.getElementById("time").innerHTML = clock;
-          </script>
-        </div>
-      </div>  
-      <div class="pager-img">
-        <img src="https://zupimages.net/up/20/39/tgbx.png" alt="What's new?" width= 600px height= 400px></img>
-      </div> 
+    <div class="status">Looking for front-end jobs...</div>
+    <div class="date">
+      <p id="today"></p>
+      <script type="text/javascript">
+        const today = new Date();
+        const date = today.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: '2-digit' });
+        document.getElementById("today").innerHTML = date;
+      </script>
+    </div>
+    <div class="time">
+      <p id="time"></p>
+      <script type="text/javascript">
+        const time = new Date();
+        const clock = time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+        document.getElementById("time").innerHTML = clock;
+      </script>
     </div>  
+    <div class="pager-img">
+      <img src="https://zupimages.net/up/20/39/tgbx.png" alt="What's new?" width= 600px height= 400px></img>
+    </div>   
   </div>
   
   <!--WORK-->
