@@ -9,8 +9,18 @@
   box-sizing: border-box;
 }
 
-/* SCROLL BACK TO TOP BUTTON */
+/* LOADING ICON */
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(https://www.zupimages.net/up/20/41/t0vx.gif) center no-repeat #fff;
+}
 
+/* SCROLL BACK TO TOP BUTTON */
 .fa-arrow-up{
   color: #000000;
 }
