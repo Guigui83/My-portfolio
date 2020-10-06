@@ -157,6 +157,18 @@ nav{
   font-size: 28px;
 }
 
+#pager-off{
+  position: relative;
+  top: 281px;
+  right: 2px;
+  background: #2c401a;
+  filter: opacity(.80);
+  transform: rotate(0.3deg);
+  width: 291px;
+  height: 88px;
+  border-radius: 8px;
+}
+
 .pager-img{
   text-align: center;
   height: 300px;
