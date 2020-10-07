@@ -52,3 +52,6 @@ $(window).load(function() {
   // Animate loader off screen
   $(".se-pre-con").fadeOut("slow");;
 });
+
+//TURN ON THE PAGER
+//when mouse over pager

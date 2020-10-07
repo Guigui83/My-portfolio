@@ -40,13 +40,25 @@
 
   <!--HOME-->
   <div class="home" id="home">
-    <div class="introduction">
+    <div class="introduction" id="introduction">
       <h2>Hi, I'm Guillaume</h2><p>a Montreal based front-end web developer.
     </div>
-    <div id="pager-off"></div>
+    <div class="screen" id="screen-off">
+      <script>
+        document.getElementById("screen-off").onmouseover = function() {mouseOver()};
+        document.getElementById("screen-off").onmouseout = function() {mouseOut()};
+        
+        function mouseOver() {
+          document.getElementById("screen-off").style.visibility="hidden";
+        }
+        
+        function mouseOut() {
+          document.getElementById("screen-off").style.visibility="visible";
+        }
+        </script>
+    </div>
     <div class="status">Looking for front-end jobs...</div>
-    <div class="date">
-      <p id="today"></p>
+    <div class="date" id="today">
       <script type="text/javascript">
         const today = new Date();
         const date = today.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: '2-digit' });

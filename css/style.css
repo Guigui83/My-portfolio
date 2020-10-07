@@ -147,7 +147,7 @@ nav{
 
 .home>.introduction{
   position: absolute;
-  top: 260px;
+  top: 300px;
 }
 
 .introduction{
@@ -157,14 +157,14 @@ nav{
   font-size: 28px;
 }
 
-#pager-off{
+.screen{
   position: relative;
   top: 281px;
   right: 2px;
   background: #2c401a;
-  filter: opacity(.80);
+  filter: opacity(.70);
   transform: rotate(0.3deg);
-  width: 291px;
+  width: 292px;
   height: 88px;
   border-radius: 8px;
 }
