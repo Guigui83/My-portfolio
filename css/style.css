@@ -162,9 +162,9 @@ nav{
   height: 420px;
 }
 
-.standby-screen{
+#standby-screen{
   position: relative;
-  top: 281px;
+  top: 325px;
   left: 153px;
   background: #2c401a;
   filter: opacity(.70);
@@ -174,29 +174,26 @@ nav{
   border-radius: 8px;
 }
 
-/*
-.envelope{
+#envelope{
   text-align: center;
   position: relative;
-  top: 210px;
-  color: #2c401a;
+  top: 217px;
 }
-*/
 
-.operator{
+#operator{
   text-align: center;
   position: relative;
-  top: 210px;
+  top: 252px;
 }
 
-.operator,.status,.date,.time{
+#operator,.status,.date,.time{
   font-family: 'MotorolaScreentype';
   color: #2c401a;
   font-size: 22px;
 }
 
 /*
-.status{
+#status{
   text-align: center;
   position: relative;
   top: 210px;

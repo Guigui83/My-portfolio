@@ -38,16 +38,18 @@
   <!--LOADING ICON-->
   <div class="se-pre-con"></div>
 
-  <!--HOME-->
+  <!--HOME SECTION-->
   <div class="home" id="home">
     <div class="introduction" id="introduction">
       <h2>Hi, I'm Guillaume</h2><p>a Montreal based front-end web developer.
     </div>
-    <!--pager-->
-    <div class="standby">
-      <div class="standby-screen"></div>
-      <!--div class="status">Looking for big money!!</div-->
-      <div class="operator">FRANCE TELECOM</div>
+    <!--pager on standby-->
+    <div class="pager" id="pager">
+      <div class="standby-screen" id="standby-screen"></div>
+      <div class="operator" id="operator">FRANCE TELECOM</div>
+      <div class="envelope" id="envelope">
+        <img src="https://zupimages.net/up/20/41/9fp4.png" width= 40px height= 40px></img>
+      </div> 
       <div class="date" id="today">
         <script type="text/javascript">
           const today = new Date();
@@ -66,26 +68,36 @@
       <div class="pager-img">
         <img src="https://zupimages.net/up/20/39/tgbx.png" alt="What's new?" width= 600px height= 400px></img>
       </div>
+       <!--new message after scrolling--> 
+      <script>
+        const pagerElem = document.querySelector('#pager');
+        const standbyElem = document.querySelector('#standby-screen');
+        const operatorElem = document.querySelector('#operator');
+        const messageElem = document.querySelector('#envelope');
+    
+        const scrollAmount = -700;
+        window.addEventListener('scroll', (event) => {
+          const { top } = pagerElem.getBoundingClientRect();
+          const heroInView = top - window.innerHeight < scrollAmount;
+          standbyElem.style.visibility = "hidden";
+          operatorElem.style.visibility = "hidden";
+          messageElem.style.visibility = "visible";
+        });
+      </script>
     </div>  
-    <!--screen new message>
-    <div class = "new-message" id="new-message">
-      <div class="envelope">
-        <img src="https://zupimages.net/up/20/41/9fp4.png" width= 40px height= 40px></img>
-      </div>
-    </div--> 
   </div>
   
-  <!--WORK-->
+  <!--WORK SECTION-->
   <div class="work" id="work">
     <div class="introduction">Check my  previews works and projects.</div>
   </div>
 
-  <!--ABOUT-->
+  <!--ABOUT SECTION-->
   <div class="about" id="about">
     <div class="introduction">I'm a front-end web developer.</div>
   </div>
 
-   <!--CONTACT-->
+   <!--CONTACT SECTION-->
   <div class="contact" id="contact">
     <div class="introduction">Follow me or contact.</div>
   </div>
