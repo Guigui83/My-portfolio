@@ -147,7 +147,7 @@ nav{
 
 .home>.introduction{
   position: absolute;
-  top: 300px;
+  top: 250px;
 }
 
 .introduction{
@@ -157,10 +157,15 @@ nav{
   font-size: 28px;
 }
 
-.screen{
+.pager-img{
+  text-align: center;
+  height: 420px;
+}
+
+.standby-screen{
   position: relative;
   top: 281px;
-  right: 2px;
+  left: 153px;
   background: #2c401a;
   filter: opacity(.70);
   transform: rotate(0.3deg);
@@ -169,33 +174,45 @@ nav{
   border-radius: 8px;
 }
 
-.pager-img{
+/*
+.envelope{
   text-align: center;
-  height: 300px;
-}
-
-.status,.date,.time{
-  font-family: 'MotorolaScreentype';
+  position: relative;
+  top: 210px;
   color: #2c401a;
-  font-size: 22px;
 }
+*/
 
-.status{
+.operator{
   text-align: center;
   position: relative;
   top: 210px;
 }
 
+.operator,.status,.date,.time{
+  font-family: 'MotorolaScreentype';
+  color: #2c401a;
+  font-size: 22px;
+}
+
+/*
+.status{
+  text-align: center;
+  position: relative;
+  top: 210px;
+}
+*/
+
 .date{
   position: relative;
   top: 220px;
-  left: 60px;
+  left: 330px;
 }
 
 .time{
   position: relative;
   top: 195px;
-  right: 60px;
+  left: 200px;
 }
 
 /* WORK */

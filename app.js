@@ -47,6 +47,7 @@ function topFunction() {
 }
 
 // ICON LOADING WHILE PAGE LOADS
+
 // Wait for window load
 $(window).load(function() {
   // Animate loader off screen
@@ -54,4 +55,7 @@ $(window).load(function() {
 });
 
 //TURN ON THE PAGER
-//when mouse over pager
+
+//Get the bright message screen:
+
+

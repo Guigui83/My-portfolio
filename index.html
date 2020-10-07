@@ -43,39 +43,36 @@
     <div class="introduction" id="introduction">
       <h2>Hi, I'm Guillaume</h2><p>a Montreal based front-end web developer.
     </div>
-    <div class="screen" id="screen-off">
-      <script>
-        document.getElementById("screen-off").onmouseover = function() {mouseOver()};
-        document.getElementById("screen-off").onmouseout = function() {mouseOut()};
-        
-        function mouseOver() {
-          document.getElementById("screen-off").style.visibility="hidden";
-        }
-        
-        function mouseOut() {
-          document.getElementById("screen-off").style.visibility="visible";
-        }
+    <!--pager-->
+    <div class="standby">
+      <div class="standby-screen"></div>
+      <!--div class="status">Looking for big money!!</div-->
+      <div class="operator">FRANCE TELECOM</div>
+      <div class="date" id="today">
+        <script type="text/javascript">
+          const today = new Date();
+          const date = today.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: '2-digit' });
+          document.getElementById("today").innerHTML = date;
         </script>
-    </div>
-    <div class="status">Looking for front-end jobs...</div>
-    <div class="date" id="today">
-      <script type="text/javascript">
-        const today = new Date();
-        const date = today.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: '2-digit' });
-        document.getElementById("today").innerHTML = date;
-      </script>
-    </div>
-    <div class="time">
-      <p id="time"></p>
-      <script type="text/javascript">
-        const time = new Date();
-        const clock = time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-        document.getElementById("time").innerHTML = clock;
-      </script>
+      </div>
+      <div class="time">
+        <p id="time"></p>
+        <script type="text/javascript">
+          const time = new Date();
+          const clock = time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+          document.getElementById("time").innerHTML = clock;
+        </script>
+      </div>
+      <div class="pager-img">
+        <img src="https://zupimages.net/up/20/39/tgbx.png" alt="What's new?" width= 600px height= 400px></img>
+      </div>
     </div>  
-    <div class="pager-img">
-      <img src="https://zupimages.net/up/20/39/tgbx.png" alt="What's new?" width= 600px height= 400px></img>
-    </div>   
+    <!--screen new message>
+    <div class = "new-message" id="new-message">
+      <div class="envelope">
+        <img src="https://zupimages.net/up/20/41/9fp4.png" width= 40px height= 40px></img>
+      </div>
+    </div--> 
   </div>
   
   <!--WORK-->
