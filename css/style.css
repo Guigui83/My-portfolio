@@ -164,7 +164,7 @@ nav{
 
 #standby-screen{
   position: relative;
-  top: 325px;
+  top: 320px;
   left: 153px;
   background: #2c401a;
   filter: opacity(.70);
@@ -177,13 +177,13 @@ nav{
 #envelope{
   text-align: center;
   position: relative;
-  top: 217px;
+  top: 218px;
 }
 
 #operator{
   text-align: center;
   position: relative;
-  top: 252px;
+  top: 247px;
 }
 
 #operator,.status,.date,.time{
