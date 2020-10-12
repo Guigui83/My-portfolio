@@ -9,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
   <link rel="stylesheet" href="css/style.css">
-  <title>Guillaume Lenzinger — Developer</title>
+  <title>Guillaume — Developer</title>
 </head>
 <body>
   <!--NAVBAR-->
@@ -43,14 +43,14 @@
     <div class="introduction" id="introduction">
       <h2>Hi, I'm Guillaume</h2><p>a Montreal based front-end web developer.
     </div>
-    <!--pager on standby-->
+    <!--pager design-->
     <div class="pager" id="pager">
       <div class="standby-screen" id="standby-screen"></div>
       <div class="operator" id="operator">FRANCE TELECOM</div>
       <div class="envelope" id="envelope">
         <img src="https://zupimages.net/up/20/41/9fp4.png" width= 40px height= 35px alt="envelope on pager"></img>
       </div> 
-      <div class="date" id="today">
+      <!--div class="date" id="today">
         <script type="text/javascript">
           const today = new Date();
           const date = today.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: '2-digit' });
@@ -59,10 +59,25 @@
       </div>
       <div class="time">
         <p id="time"></p>
-        <script type="text/javascript">
+        <script- type="text/javascript">
           const time = new Date();
           const clock = time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
           document.getElementById("time").innerHTML = clock;
+        </script--->
+
+      <!--pager date-->  
+      <div class="date" id="today">
+        <script src="lib/moment/moment-with-locales.min.js"></script>
+        <script>
+          // Current Date + Time
+          const date = moment();
+          date.locale("en-us");
+          date.format("MM/DD/YYYY h:mmA");
+          document.getElementById("today").innerHTML = date;
+
+          // Create from ISO 8601 string
+          //date = moment("2020-10-11T23:59:00.000+05:00");
+
         </script>
       </div>
       <div class="pager-img">

@@ -54,8 +54,6 @@ $(window).load(function() {
   $(".se-pre-con").fadeOut("slow");;
 });
 
-//TURN ON THE PAGER
-
-//Get the bright message screen:
+//DATE
 
 

@@ -186,7 +186,7 @@ nav{
   top: 247px;
 }
 
-#operator,.status,.date,.time{
+#operator,.status,.date{
   font-family: 'MotorolaScreentype';
   color: #2c401a;
   font-size: 22px;
@@ -206,11 +206,12 @@ nav{
   left: 330px;
 }
 
-.time{
+/*.time{
   position: relative;
   top: 195px;
   left: 200px;
 }
+*/
 
 /* WORK */
 .work{ 
