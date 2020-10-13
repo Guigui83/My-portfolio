@@ -147,7 +147,7 @@ nav{
 
 .home>.introduction{
   position: absolute;
-  top: 250px;
+  top: 270px;
 }
 
 .introduction{
@@ -159,12 +159,12 @@ nav{
 
 .pager-img{
   text-align: center;
-  height: 420px;
+  height: 260px;
 }
 
 #standby-screen{
   position: relative;
-  top: 320px;
+  top: 206px;
   left: 153px;
   background: #2c401a;
   filter: opacity(.70);
@@ -174,17 +174,18 @@ nav{
   border-radius: 8px;
 }
 
+.operator{
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+
 #envelope{
   text-align: center;
   position: relative;
-  top: 218px;
+  top: -12px;
 }
 
-#operator{
-  text-align: center;
-  position: relative;
-  top: 247px;
-}
 
 #operator,.status,.date{
   font-family: 'MotorolaScreentype';

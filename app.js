@@ -21,17 +21,14 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
     });
 }
-
 navSlide();
 
 //SCROLL BACK TO TOP BUTTON
-
 //Get the button:
 mybutton = document.getElementById("fas fa-arrow-up");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     mybutton.style.visibility = "visible";
@@ -47,7 +44,6 @@ function topFunction() {
 }
 
 // ICON LOADING WHILE PAGE LOADS
-
 // Wait for window load
 $(window).load(function() {
   // Animate loader off screen
@@ -55,5 +51,4 @@ $(window).load(function() {
 });
 
 //DATE
-
 

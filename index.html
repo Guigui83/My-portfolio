@@ -33,6 +33,7 @@
     </div>
   </nav>
   <script src="app.js"></script>
+
   <!--SMOOTH SCROLL-->
 
   <!--LOADING ICON-->
@@ -40,59 +41,24 @@
 
   <!--HOME SECTION-->
   <div class="home" id="home">
-    <div class="introduction" id="introduction">
+    <header class="introduction" id="introduction">
       <h2>Hi, I'm Guillaume</h2><p>a Montreal based front-end web developer.
-    </div>
+    </header>
     <!--pager design-->
     <div class="pager" id="pager">
-      <div class="standby-screen" id="standby-screen"></div>
-      <div class="operator" id="operator">FRANCE TELECOM</div>
-      <div class="envelope" id="envelope">
-        <img src="https://zupimages.net/up/20/41/9fp4.png" width= 40px height= 35px alt="envelope on pager"></img>
-      </div> 
-      <!--div class="date" id="today">
-        <script type="text/javascript">
-          const today = new Date();
-          const date = today.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: '2-digit' });
-          document.getElementById("today").innerHTML = date;
-        </script>
-      </div>
-      <div class="time">
-        <p id="time"></p>
-        <script- type="text/javascript">
-          const time = new Date();
-          const clock = time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-          document.getElementById("time").innerHTML = clock;
-        </script--->
-
-      <!--pager date-->  
-      <div class="date" id="today">
-        <script src="lib/moment/moment-with-locales.min.js"></script>
-        <script>
-          // Current Date + Time
-          $(function()  
-  {  
-    setInterval(function()  
-        {  
-        var now = moment(),  
-        second = now.seconds() * 6,
-            minute = now.minutes() * 6 + second / 60,  
-            hour = ((now.hours() % 12) / 12) * 360 + 90 + minute / 12;  
-  
-     
-  
-        //Display date and time just below our clock   
-        $('.date').text(moment().format('MM/DD/YYYY HH:mm'));  
-  
-    }, 1000);  
-}); 
-          // Create from ISO 8601 string
-          //date = moment("2020-10-11T23:59:00.000+05:00");
-
-        </script>
+      <div class="standby-screen" id="standby-screen">
+        <div class="operator" id="operator">FRANCE TELECOM</div>
+        <div class="envelope" id="envelope">
+          <img src="https://zupimages.net/up/20/41/9fp4.png" width= 40px height= 35px alt="envelope on pager"></img>
+        </div>
       </div>
       <div class="pager-img">
         <img src="https://zupimages.net/up/20/39/tgbx.png" alt="old pager Motorola" width= 600px height= 400px></img>
+      </div>
+      <!--pager date-->  
+      <div class="date" id="today">
+        <script src="https://unpkg.com/dayjs@1.8.29/dayjs.min.js"></script>
+        <script>dayjs().format()</script>
       </div>
       <!--new message after scrolling--> 
       <script>
@@ -100,15 +66,17 @@
         const standbyElem = document.querySelector('#standby-screen');
         const operatorElem = document.querySelector('#operator');
         const messageElem = document.querySelector('#envelope');
-    
-        const scrollAmount = -700;
+        
+        function scrollAmount () {
+        const scrollAmount > 1;
         window.addEventListener('scroll', (event) => {
           const { top } = pagerElem.getBoundingClientRect();
           const heroInView = top - window.innerHeight < scrollAmount;
           standbyElem.style.visibility = "hidden";
-          operatorElem.style.visibility = "hidden";
           messageElem.style.visibility = "visible";
+          operatorElem.style.visibility = "hidden";
         });
+      }
       </script>
     </div>  
   </div>
