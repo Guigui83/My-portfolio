@@ -70,11 +70,22 @@
         <script src="lib/moment/moment-with-locales.min.js"></script>
         <script>
           // Current Date + Time
-          const date = moment();
-          date.locale("en-us");
-          date.format("MM/DD/YYYY h:mmA");
-          document.getElementById("today").innerHTML = date;
-
+          $(function()  
+  {  
+    setInterval(function()  
+        {  
+        var now = moment(),  
+        second = now.seconds() * 6,
+            minute = now.minutes() * 6 + second / 60,  
+            hour = ((now.hours() % 12) / 12) * 360 + 90 + minute / 12;  
+  
+     
+  
+        //Display date and time just below our clock   
+        $('.date').text(moment().format('MM/DD/YYYY HH:mm'));  
+  
+    }, 1000);  
+}); 
           // Create from ISO 8601 string
           //date = moment("2020-10-11T23:59:00.000+05:00");
 
