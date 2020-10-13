@@ -147,7 +147,7 @@ nav{
 
 .home>.introduction{
   position: absolute;
-  top: 270px;
+  top: 280px;
 }
 
 .introduction{
@@ -159,13 +159,12 @@ nav{
 
 .pager-img{
   text-align: center;
-  height: 260px;
+  height: 320px;
 }
 
 #standby-screen{
   position: relative;
-  top: 206px;
-  left: 153px;
+  top: 270px;
   background: #2c401a;
   filter: opacity(.70);
   transform: rotate(0.3deg);
@@ -174,16 +173,16 @@ nav{
   border-radius: 8px;
 }
 
-.operator{
+#operator{
   text-align: center;
   position: relative;
-  top: 20px;
+  top: 200px;
 }
 
 #envelope{
   text-align: center;
   position: relative;
-  top: -12px;
+  top: 168px;
 }
 
 

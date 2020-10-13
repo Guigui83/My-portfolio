@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
   <script src="https://kit.fontawesome.com/77c5c31002.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="path/to/font-awesome/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>Guillaume — Developer</title>
 </head>
 <body>
-  <!--NAVBAR-->
+<!--NAVBAR-->
   <nav>
-    <div class="fas fa-arrow-up" href="#home" button onclick="topFunction()" id="fas fa-arrow-up" title="Go to top" display="none" alt="black arrow bring you back to top"></div>
+    <div class="fas fa-arrow-up" href="#home" button onclick="topFunction()" id="fas fa-arrow-up" display="none" alt="black arrow bring you back to top"></div>
     <ul class="nav-links">
       <li>
         <a href="#work">Work</a>
@@ -34,9 +34,9 @@
   </nav>
   <script src="app.js"></script>
 
-  <!--SMOOTH SCROLL-->
+<!--SMOOTH SCROLL-->
 
-  <!--LOADING ICON-->
+<!--LOADING ICON-->
   <div class="se-pre-con"></div>
 
   <!--HOME SECTION-->
@@ -45,53 +45,33 @@
       <h2>Hi, I'm Guillaume</h2><p>a Montreal based front-end web developer.
     </header>
     <!--pager design-->
-    <div class="pager" id="pager">
-      <div class="standby-screen" id="standby-screen">
-        <div class="operator" id="operator">FRANCE TELECOM</div>
-        <div class="envelope" id="envelope">
-          <img src="https://zupimages.net/up/20/41/9fp4.png" width= 40px height= 35px alt="envelope on pager"></img>
-        </div>
-      </div>
-      <div class="pager-img">
-        <img src="https://zupimages.net/up/20/39/tgbx.png" alt="old pager Motorola" width= 600px height= 400px></img>
-      </div>
-      <!--pager date-->  
-      <div class="date" id="today">
-        <script src="https://unpkg.com/dayjs@1.8.29/dayjs.min.js"></script>
-        <script>dayjs().format()</script>
-      </div>
-      <!--new message after scrolling--> 
-      <script>
-        const pagerElem = document.querySelector('#pager');
-        const standbyElem = document.querySelector('#standby-screen');
-        const operatorElem = document.querySelector('#operator');
-        const messageElem = document.querySelector('#envelope');
-        
-        function scrollAmount () {
-        const scrollAmount > 1;
-        window.addEventListener('scroll', (event) => {
-          const { top } = pagerElem.getBoundingClientRect();
-          const heroInView = top - window.innerHeight < scrollAmount;
-          standbyElem.style.visibility = "hidden";
-          messageElem.style.visibility = "visible";
-          operatorElem.style.visibility = "hidden";
-        });
-      }
-      </script>
-    </div>  
+    <div class="pager" id="pager"></div>
+    <div class="standby-screen" id="standby-screen"></div>
+    <div class="operator" id="operator">FRANCE TELECOM</div>
+    <div class="envelope" id="envelope">
+      <img src="https://zupimages.net/up/20/41/9fp4.png" width= 40px height= 35px alt="envelope on pager"></img>
+    </div>
+    <div class="pager-img">
+      <img src="https://zupimages.net/up/20/39/tgbx.png" alt="old pager Motorola" width= 600px height= 400px></img>
+    </div>
+    <!--pager date-->  
+    <div class="date" id="today">
+      <script src="app.js"></script>
+      <script>dayjs().format()</script>
+    </div>
   </div>
   
-  <!--WORK SECTION-->
+<!--WORK SECTION-->
   <div class="work" id="work">
     <div class="introduction">Check my  previews works and projects.</div>
   </div>
 
-  <!--ABOUT SECTION-->
+<!--ABOUT SECTION-->
   <div class="about" id="about">
     <div class="introduction">I'm a front-end web developer.</div>
   </div>
 
-   <!--CONTACT SECTION-->
+<!--CONTACT SECTION-->
   <div class="contact" id="contact">
     <div class="introduction">Follow me or contact.</div>
   </div>
