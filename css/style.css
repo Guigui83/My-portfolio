@@ -186,7 +186,7 @@ nav{
 }
 
 
-#operator,.status,.date{
+#operator,.status,.today{
   font-family: 'MotorolaScreentype';
   color: #2c401a;
   font-size: 22px;
@@ -200,10 +200,11 @@ nav{
 }
 */
 
-.date{
+.today{
   position: relative;
-  top: 220px;
-  left: 330px;
+  text-align: center;
+  top: -150px;
+
 }
 
 /*.time{

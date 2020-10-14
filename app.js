@@ -51,18 +51,7 @@ $(window).load(function() {
 });
 
 // NEW MESSAGE PAGER
-const pagerElem = document.querySelector('#pager');
-const standbyElem = document.querySelector('#standby-screen');
-const operatorElem = document.querySelector('#operator');
-const messageElem = document.querySelector('#envelope');
 
-const scrollAmount = -700;
-window.addEventListener('scroll', (event) => {
-  const { top } = pagerElem.getBoundingClientRect();
-  const heroInView = top - window.innerHeight < scrollAmount;
-  standbyElem.style.visibility = "hidden";
-  operatorElem.style.visibility = "hidden";
-  messageElem.style.visibility = "visible";
-});
 
 // DATE
+
