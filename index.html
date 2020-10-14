@@ -62,8 +62,11 @@
         dayjs.extend(window.dayjs_plugin_localizedFormat)
       </script>
       <script>
-        const todayIs = document.querySelector(".today");
-        todayIs.innerHTML = dayjs().format('L LT')
+        function updateTime() {
+          const todayIs = document.querySelector(".today");
+          todayIs.innerHTML = dayjs().format('L LT')
+        }
+      setInterval(updateTime, 1000);
       </script>
     </div>
   </div>
