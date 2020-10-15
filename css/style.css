@@ -158,13 +158,15 @@ nav{
 }
 
 .pager-img{
+  
   text-align: center;
-  height: 320px;
+  height: 200px;
 }
 
 #standby-screen{
   position: relative;
-  top: 270px;
+  top: 231px;
+  left: -1px;
   background: #2c401a;
   filter: opacity(.70);
   transform: rotate(0.3deg);
@@ -176,13 +178,14 @@ nav{
 #operator{
   text-align: center;
   position: relative;
-  top: 200px;
+  top: 160px;
 }
 
 #envelope{
   text-align: center;
   position: relative;
   top: 168px;
+  display: none;
 }
 
 
@@ -203,16 +206,8 @@ nav{
 .today{
   position: relative;
   text-align: center;
-  top: -150px;
-
+  top: -25px;
 }
-
-/*.time{
-  position: relative;
-  top: 195px;
-  left: 200px;
-}
-*/
 
 /* WORK */
 .work{ 

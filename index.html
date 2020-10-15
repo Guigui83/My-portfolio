@@ -69,6 +69,16 @@
       setInterval(updateTime, 1000);
       </script>
     </div>
+    <!--message on scroll down-->
+    <script>
+      $(window).scroll(function() {
+        ($(this).scrollTop()>0)
+        {
+            $('.standby-screen,.operator').hide();
+            $('.envelope').show();
+        }
+      });
+    </script>
   </div>
   
 <!--WORK SECTION-->
