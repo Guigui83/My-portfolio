@@ -215,7 +215,7 @@ nav{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: aqua;
+  background: #87ded8;
   height: 1000px;
 }
 
@@ -225,7 +225,7 @@ nav{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: rgb(255, 0, 212);
+  background: #f6109d;
   height: 1000px;
 }
 
