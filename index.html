@@ -79,9 +79,12 @@
       });
     </script>
     <!--tone message on scroll down-->
+    <div id="bip" src="sound/bip.wav">
     <script src="jquery.min.js"></script>
-    <script src="js/AudioFade.js"></script>
-
+    <script src="audiofade/AudioFade.js"></script>
+    <script>
+      const third = new AudioFade('#bip', 4000).init();
+    </script></div>
   </div>
   
 <!--WORK SECTION-->
