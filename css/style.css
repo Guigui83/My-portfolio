@@ -160,7 +160,7 @@ nav{
 .pager-img{
   
   text-align: center;
-  height: 200px;
+  height: 260px;
 }
 
 #standby-screen{
@@ -168,11 +168,25 @@ nav{
   top: 231px;
   left: -1px;
   background: #2c401a;
-  filter: opacity(.70);
+  filter: opacity(.60);
   transform: rotate(0.3deg);
   width: 292px;
   height: 88px;
   border-radius: 8px;
+}
+
+.animate {
+  animation: animate .2s ease-in-out forwards;
+}
+
+@keyframes animate {
+  from {
+    background-color: #2c401a;
+  }
+  to {
+    background-color:#78ba45;
+    filter: opacity(.0);
+  }
 }
 
 #operator{
@@ -187,7 +201,6 @@ nav{
   top: 168px;
   display: none;
 }
-
 
 #operator,.status,.today{
   font-family: 'MotorolaScreentype';
@@ -206,7 +219,7 @@ nav{
 .today{
   position: relative;
   text-align: center;
-  top: -25px;
+  top: -88px;
 }
 
 /* WORK */
