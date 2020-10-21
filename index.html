@@ -108,14 +108,20 @@
 
     <!--text scrolling-->
     <div class="scrolling-zone">
-      <div class="scrolling-text">
+      <div class="scrolling-text" id="scrolling-text">
         Available for front-end position in Quebec.
       </div>
     </div>
         
-    <!--envelope blinking 3 times after scroll down-->
-
-
+    <!--envelope disappears + text appears on scroll down-->
+    <script>
+      $(window).scroll(function() {
+        if ($(this).scrollTop()>3){
+            $('.envelope').hide();
+            $('.scrolling-text').show();
+        }
+      });
+    </script>
   </div>
   
 <!--WORK SECTION-->

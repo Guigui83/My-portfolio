@@ -147,7 +147,7 @@ nav{
 
 .home>.introduction{
   position: absolute;
-  top: 270px;
+  top: 250px;
 }
 
 .introduction{
@@ -158,7 +158,6 @@ nav{
 }
 
 .pager-img{
-  
   text-align: center;
   height: 260px;
 }
@@ -176,7 +175,7 @@ nav{
 }
 
 .light-screen {
-  animation: animate .2s ease-in-out forwards;
+  animation: animate 0.1s ease-in-out forwards;
 }
 
 @keyframes animate{
@@ -205,6 +204,7 @@ nav{
   -moz-animation: scroll 8s infinite linear;
   -o-animation: scroll 8s infinite linear;
   animation: scroll 8s infinite linear;
+  display: none;
 }
 
 @-webkit-keyframes scroll{
@@ -216,18 +216,7 @@ nav{
   text-align: center;
   position: relative;
   top: 168px;
-  -webkit-animation: blink normal 1s infinite ease-in-out; /* Webkit */
-}
-@-webkit-keyframes blink {
-  0% {
-      opacity:1;
-  }
-  50% {
-      opacity:0;
-  }
-  100% {
-      opacity:1;
-  }
+  filter: opacity(.60);
 }
 
 .today{
