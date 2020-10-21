@@ -147,7 +147,7 @@ nav{
 
 .home>.introduction{
   position: absolute;
-  top: 280px;
+  top: 270px;
 }
 
 .introduction{
@@ -165,7 +165,7 @@ nav{
 
 #standby-screen{
   position: relative;
-  top: 231px;
+  top: 245px;
   left: -1px;
   background: #2c401a;
   filter: opacity(.60);
@@ -175,11 +175,11 @@ nav{
   border-radius: 8px;
 }
 
-.animate {
+.light-screen {
   animation: animate .2s ease-in-out forwards;
 }
 
-@keyframes animate {
+@keyframes animate{
   from {
     background-color: #2c401a;
   }
@@ -189,37 +189,57 @@ nav{
   }
 }
 
-#operator{
+.scrolling-zone{
   text-align: center;
   position: relative;
-  top: 160px;
+  width: 290px;
+  height: 50px;
+  top: -150px;
+  overflow:hidden;
+  white-space:nowrap;
 }
 
-#envelope{
+.scrolling-text{
+  position: relative;
+  -webkit-animation: scroll 8s infinite linear;;
+  -moz-animation: scroll 8s infinite linear;
+  -o-animation: scroll 8s infinite linear;
+  animation: scroll 8s infinite linear;
+}
+
+@-webkit-keyframes scroll{
+    0%   {left: 322px;}
+    100% {left: -340px;}
+}
+
+.envelope{
   text-align: center;
   position: relative;
   top: 168px;
-  display: none;
+  -webkit-animation: blink normal 1s infinite ease-in-out; /* Webkit */
 }
-
-#operator,.status,.today{
-  font-family: 'MotorolaScreentype';
-  color: #2c401a;
-  font-size: 22px;
+@-webkit-keyframes blink {
+  0% {
+      opacity:1;
+  }
+  50% {
+      opacity:0;
+  }
+  100% {
+      opacity:1;
+  }
 }
-
-/*
-#status{
-  text-align: center;
-  position: relative;
-  top: 210px;
-}
-*/
 
 .today{
   position: relative;
   text-align: center;
   top: -88px;
+}
+
+.scrolling-text,.today{
+  font-family: 'MotorolaScreentype';
+  color: #2c401a;
+  font-size: 22px;
 }
 
 /* WORK */

@@ -47,7 +47,6 @@
 
     <!--pager design-->
     <div class="standby-screen" id="standby-screen"></div>
-    <div class="operator" id="operator">FRANCE TELECOM</div>
     <div class="envelope" id="envelope">
       <img src="https://zupimages.net/up/20/41/9fp4.png" width= 40px height= 35px alt="envelope on pager"></img>
     </div>
@@ -65,18 +64,18 @@
       <script>
         function updateTime() {
           const todayIs = document.querySelector(".today");
-          todayIs.innerHTML = dayjs().format('L LT')
+          todayIs.innerHTML = dayjs().format('LT L')
         }
-      setInterval(updateTime, 1000);
+        setInterval(updateTime, 1000);
       </script>
     </div>
 
-    <!--message on scroll down-->
+    <!--screen light on scroll down-->
     <script>
       // get the element to animate
       const element = document.getElementById('standby-screen');
       const elementHeight = element.clientHeight;
-      
+
       // listen for scroll event and call animate function
       document.addEventListener('scroll', animate);
       
@@ -86,12 +85,10 @@
         const windowHeight = window.innerHeight;
         // get number of pixels that the document is scrolled
         const scrollY = window.scrollY || window.pageYOffset;
-        
         // get current scroll position (distance from the top of the page to the bottom of the current viewport)
         const scrollPosition = scrollY + windowHeight;
         // get element position (distance from the top of the page to the bottom of the element)
         const elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
-        
         // is scroll position greater than element position? (is element in view?)
         if (scrollPosition > elementPosition) {
           return true;
@@ -104,13 +101,21 @@
         // is element in view?
         if (inView()) {
             // element is in view, add class to element
-            element.classList.add('animate');
+            element.classList.add('light-screen');
         }
       }
-      //trigger message tone on scroll down 
+    </script>
+
+    <!--text scrolling-->
+    <div class="scrolling-zone">
+      <div class="scrolling-text">
+        Available for front-end position in Quebec.
+      </div>
+    </div>
+        
+    <!--envelope blinking 3 times after scroll down-->
 
 
-    </script>   
   </div>
   
 <!--WORK SECTION-->
