@@ -23,9 +23,6 @@
 /* SCROLL BACK TO TOP BUTTON */
 .fa-arrow-up{
   color: #000000;
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
 }
 
 .fa-arrow-up:hover{
@@ -211,8 +208,8 @@ nav{
 }
 
 @-webkit-keyframes scroll{
-    0%   {left: 335px;}
-    100% {left: -510px;}
+    0%   {left: 325px;}
+    100% {left: -470px;}
 }
 
 .envelope{
