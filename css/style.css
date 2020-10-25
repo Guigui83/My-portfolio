@@ -147,7 +147,7 @@ nav{
 
 .home>.introduction{
   position: absolute;
-  top: 250px;
+  top: 170px;
 }
 
 .introduction{
@@ -159,7 +159,7 @@ nav{
 
 .pager-img{
   text-align: center;
-  height: 260px;
+  height: 440px;
 }
 
 #standby-screen{
@@ -193,7 +193,7 @@ nav{
   position: relative;
   width: 290px;
   height: 50px;
-  top: -150px;
+  top: -330px;
   overflow:hidden;
   white-space:nowrap;
 }
@@ -222,7 +222,7 @@ nav{
 .today{
   position: relative;
   text-align: center;
-  top: -88px;
+  top: -266px;
 }
 
 .scrolling-text,.today{
