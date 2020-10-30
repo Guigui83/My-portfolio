@@ -1,37 +1,61 @@
 @font-face {
     font-family: "Motorola ScreenType";
     src: url('/MotorolaScreentype.ttf') format('truetype'),
-  }
+}
   
-  *{
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
   }
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+/* LOADING ICON */
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(https://zupimages.net/up/20/41/ddmn.gif) center no-repeat #fff;
+}
   
-  /* LOADING ICON */
-  .se-pre-con {
-      position: fixed;
-      left: 0px;
-      top: 0px;
-      width: 100%;
-      height: 100%;
-      z-index: 9999;
-      background: url(https://zupimages.net/up/20/41/ddmn.gif) center no-repeat #fff;
+/* SMOOTH SCROLL */
+
+section {
+  
+    /* Scroll Snap */
+    scroll-snap-align: center;
   }
-  
-  /* SCROLL BACK TO TOP BUTTON */
-  .fa-arrow-up{
+
+/* SCROLL BACK TO TOP BUTTON */
+.fa-arrow-up{
     color: #000000;
-  }
-  
-  .fa-arrow-up:hover{
+}
+
+.fa-arrow-up:hover{
     color: #666666;
     cursor: pointer;
-  }
-  
-  /* NAVABR */
-  nav{
+}
+
+/* NAVABR */
+nav{
     display: flex;
     position: fixed;
     z-index:1;
@@ -41,128 +65,128 @@
     min-height: 8vh;
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
-  }
-  
-    .nav-links{
-      display: flex;
-      justify-content: space-around;
-      width: 30%;
-    }
-  
-    .nav-links li{
-      list-style: none;
-    }
-  
-    .nav-links a{
-      color: #000000;
-      text-decoration: none;
-      letter-spacing: 3px;
-      font-weight: bold;
-      font-size: 16px;
-    }
-  
-    .nav-links a:hover{
-      color: #666666;
-    }
-  
-    .burger{
-      display: none;
-      cursor: pointer;
-    }
-  
-    .burger div{
-      width: 25px;
-      height: 3px;
-      background-color:#000000;
-      margin: 5px;
-      transition: all 0.3s ease;
-    }
-  
-  @media screen and (max-width: 1024px){
-    .nav-links{
-      width: 60%;
-    }
-  
-  }
-  
-  @media screen and (max-width: 768px){
-    body{
-      overflow-x: hidden;
-    }
-    .nav-links{
-      position: absolute;
-      right: 0px;
-      height: 92vh;
-      top: 8vh;
-      background-color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 50%;
-      transform: translateX(100%);
-      transition: transform 0.2s ease-in;
-    }
-    .nav-links li{
-      opacity: 0;
-    }
-    .burger{
-      display: block;
-    }
-  }
-  
-    .nav-active{
-      transform: translateX(0%);
-      opacity: 0.9;
-    }
-  
-  @keyframes navLinkFade{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-  }
-  
-  .toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
-  }
-  .toggle .line2{
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-links a:hover{
+    color: #666666;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color:#000000;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px){
+.nav-links{
+    width: 60%;
+}
+
+}
+
+@media screen and (max-width: 768px){
+body{
+    overflow-x: hidden;
+}
+.nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in;
+}
+.nav-links li{
     opacity: 0;
-  }
-  .toggle .line3{
+}
+.burger{
+    display: block;
+}
+}
+
+.nav-active{
+    transform: translateX(0%);
+    opacity: 0.9;
+}
+
+@keyframes navLinkFade{
+from{
+    opacity: 0;
+    transform: translateX(50px);
+}
+to{
+    opacity: 1;
+    transform: translateX(0px);
+}
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
-  }
-  
-  /* HOME */
-  .home{ 
+}
+
+/* SECTION HOME */
+.home{ 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 950px;
-  }
-  
-  .home>.introduction{
+}
+
+.home>.introduction{
     position: absolute;
     top: 170px;
-  }
-  
-  .introduction{
+}
+
+.introduction{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 28px;
-  }
-  
-  .pager-img{
+}
+
+.pager-img{
     text-align: center;
     height: 440px;
-  }
-  
-  #standby-screen{
+}
+
+#standby-screen{
     position: relative;
     top: 245px;
     left: -1px;
@@ -172,23 +196,23 @@
     width: 292px;
     height: 88px;
     border-radius: 8px;
-  }
-  
-  .light-screen {
+}
+
+.light-screen {
     animation: animate 0.1s ease-in-out forwards;
-  }
-  
-  @keyframes animate{
+}
+
+@keyframes animate{
     from {
-      background-color: #2c401a;
+        background-color: #2c401a;
     }
     to {
-      background-color:#78ba45;
-      filter: opacity(.0);
+        background-color:#78ba45;
+        filter: opacity(.0);
     }
-  }
-  
-  .scrolling-zone{
+}
+
+.scrolling-zone{
     text-align: center;
     position: relative;
     width: 290px;
@@ -196,68 +220,59 @@
     top: -330px;
     overflow:hidden;
     white-space:nowrap;
-  }
-  
-  .scrolling-text{
+}
+
+.scrolling-text{
     position: relative;
     -webkit-animation: scroll 8s infinite linear;;
     -moz-animation: scroll 8s infinite linear;
     -o-animation: scroll 8s infinite linear;
     animation: scroll 8s infinite linear;
     display: none;
-  }
-  
-  @-webkit-keyframes scroll{
-      0%   {left: 325px;}
-      100% {left: -470px;}
-  }
-  
-  .envelope{
+}
+
+@-webkit-keyframes scroll{
+    0%   {left: 325px;}
+    100% {left: -470px;}
+}
+
+.envelope{
     text-align: center;
     position: relative;
     top: 168px;
     filter: opacity(.60);
-  }
-  
-  .today{
+}
+
+.today{
     position: relative;
     text-align: center;
     top: -266px;
-  }
-  
-  .scrolling-text,.today{
+}
+
+.scrolling-text,.today{
     font-family: 'MotorolaScreentype';
     color: #2c401a;
     font-size: 22px;
-  }
-  
-  /* WORK */
-  .work{ 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+}
+
+/* SECTION WORK */
+.work{ 
+    
     background: #87ded8;
     height: 1000px;
-  }
-  
-  /* ABOUT */
-  .about{ 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+}
+
+/* SECTION ABOUT */
+.about{ 
+    
     background: #f6109d;
     height: 1000px;
-  }
-  
-  /* CONTACT */
-  .contact{ 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+}
+
+/* SECTION CONTACT */
+.contact{ 
+    
     background: rgb(0, 255, 13);
     height: 1000px;
-  }
+}
   
