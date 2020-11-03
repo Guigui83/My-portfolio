@@ -10,20 +10,9 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     line-height: 1.6;
-    overflow: hidden;
   }
-
-.container {
-    width: 100%;
-    height: 100%;
-    /* CSS Smooth Scroll */
-    overflow-y: scroll; 
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
 
 /* LOADING ICON */
 .se-pre-con {
@@ -35,27 +24,9 @@ body {
     z-index: 9999;
     background: url(https://zupimages.net/up/20/41/ddmn.gif) center no-repeat #fff;
 }
-  
-/* SMOOTH SCROLL */
 
-section {
-  
-    /* Scroll Snap */
-    scroll-snap-align: center;
-  }
-
-/* SCROLL BACK TO TOP BUTTON */
-.fa-arrow-up{
-    color: #000000;
-}
-
-.fa-arrow-up:hover{
-    color: #666666;
-    cursor: pointer;
-}
-
-/* NAVABR */
-nav{
+/* NAVBAR */
+.navbar{
     display: flex;
     position: fixed;
     z-index:1;
@@ -71,9 +42,6 @@ nav{
     display: flex;
     justify-content: space-around;
     width: 30%;
-}
-
-.nav-links li{
     list-style: none;
 }
 
@@ -89,6 +57,7 @@ nav{
     color: #666666;
 }
 
+ /*responsive navbar*/
 .burger{
     display: none;
     cursor: pointer;
@@ -104,9 +73,8 @@ nav{
 
 @media screen and (max-width: 1024px){
 .nav-links{
-    width: 60%;
+    width: 50%;
 }
-
 }
 
 @media screen and (max-width: 768px){
@@ -116,7 +84,7 @@ body{
 .nav-links{
     position: absolute;
     right: 0px;
-    height: 92vh;
+    height: 62vh;
     top: 8vh;
     background-color: #ffffff;
     display: flex;
@@ -131,6 +99,7 @@ body{
 }
 .burger{
     display: block;
+    margin-left: 372px;
 }
 }
 
@@ -159,6 +128,27 @@ to{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
 }
+  
+/* SMOOTH SCROLL */
+.container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+
+}
+
+/* SCROLL BACK TO TOP BUTTON */
+.fa-arrow-up{
+    color: #000000;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+.fa-arrow-up:hover{
+    color: #666666;
+    cursor: pointer;
+}
 
 /* SECTION HOME */
 .home{ 
@@ -180,7 +170,7 @@ to{
     font-weight: bold;
     font-size: 28px;
 }
-
+ /*pager*/
 .pager-img{
     text-align: center;
     height: 440px;
@@ -188,7 +178,7 @@ to{
 
 #standby-screen{
     position: relative;
-    top: 245px;
+    top: 249px;
     left: -1px;
     background: #2c401a;
     filter: opacity(.60);
@@ -216,8 +206,8 @@ to{
     text-align: center;
     position: relative;
     width: 290px;
-    height: 50px;
-    top: -330px;
+    height: 60px;
+    top: -337px;
     overflow:hidden;
     white-space:nowrap;
 }
@@ -246,7 +236,7 @@ to{
 .today{
     position: relative;
     text-align: center;
-    top: -266px;
+    top: -268px;
 }
 
 .scrolling-text,.today{
@@ -257,21 +247,18 @@ to{
 
 /* SECTION WORK */
 .work{ 
-    
     background: #87ded8;
     height: 1000px;
 }
 
 /* SECTION ABOUT */
 .about{ 
-    
     background: #f6109d;
     height: 1000px;
 }
 
 /* SECTION CONTACT */
 .contact{ 
-    
     background: rgb(0, 255, 13);
     height: 1000px;
 }
