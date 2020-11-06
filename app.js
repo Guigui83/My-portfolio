@@ -50,6 +50,21 @@ navSlide();
     $(".se-pre-con").fadeOut("slow");;
   });
 
+
+// HOVER LOGO NAVBAR
+$(function(){
+  $("#home-button").on({
+   mouseenter: function(){
+    $(this).attr('src','images/logo_fade.png');
+  },
+  mouseleave: function(){
+    $(this).attr('src','images/logo.png');
+  }
+  });
+  
+});
+
+
 // NEW MESSAGE PAGER ON SCROLL DOWN
 
   
