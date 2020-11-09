@@ -9,19 +9,6 @@
     box-sizing: border-box;
 }
 
-body {
-    height: 100vh;
-    line-height: 1.6;
-  }
-
-/* SMOOTH SCROLL */
-.container {
-    width: 100%;
-    height: 100%;
-    /* CSS Smooth Scroll */
-   
-}
-
 /* NAVBAR */
 .navbar{
     display: flex;
@@ -170,7 +157,7 @@ to{
 
 #standby-screen{
     position: relative;
-    top: 249px;
+    top: 245px;
     left: -1px;
     background: #2c401a;
     filter: opacity(.60);
@@ -199,7 +186,7 @@ to{
     position: relative;
     width: 290px;
     height: 60px;
-    top: -340px;
+    top: -330px;
     overflow:hidden;
     white-space:nowrap;
 }
@@ -237,22 +224,31 @@ to{
     font-size: 22px;
 }
 
-/* SECTION WORK */
+/* SECTION WORK ABOUT CONTACT */
+.section-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height:90vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+
 .work{ 
     background: #87ded8;
-    height: 1000px;
+    height: 900px;
 }
 
-/* SECTION ABOUT */
 .about{ 
     background: #f6109d;
-    height: 1000px;
+    height: 900px;
 }
 
-/* SECTION CONTACT */
 .contact{ 
     background: rgb(0, 255, 13);
-    height: 1000px;
+    height: 900px;
 }
 
 /* LOADING ICON */
