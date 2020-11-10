@@ -13,129 +13,127 @@
 </head>
 <body>
   <div class="fas fa-arrow-up" href="#home" button onclick="topFunction()" id="fas fa-arrow-up" display="none" alt="black arrow bring you back to top"></div>
-  <div class="container">
 
-  <!--NAVBAR-->
-    <nav class="navbar">
-      <a href = "#home">
-        <img id = "home-button" alt = "look out logo bring you back to home" src = "images/logo.png" height=50px width=50px>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#">Fr</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
-    <script src="app.js"></script>
+<!--NAVBAR-->
+  <nav class="navbar">
+    <a href = "#home">
+      <img id = "home-button" alt = "look out logo bring you back to home" src = "images/logo.png" height=50px width=50px>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#">Fr</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <script src="app.js"></script>
 
-  <!--LOADING ICON-->
-    <div class="se-pre-con"></div>
+<!--LOADING ICON-->
+  <div class="se-pre-con"></div>
 
-  <!--HOME SECTION-->
-    <section class="home" id="home">
-      <header class="introduction" id="introduction">
-        <h2>Hi, I'm Guillaume</h2><p>a Montreal based web developer.
-      </header>
+<!--HOME SECTION-->
+  <section class="home" id="home">
+    <header class="introduction" id="introduction">
+      <h2>Hi, I'm Guillaume</h2><p>a Montreal based web developer.
+    </header>
 
-      <!--pager design-->
-      <div class="standby-screen" id="standby-screen"></div>
-      <div class="envelope" id="envelope">
-        <img src="https://zupimages.net/up/20/41/9fp4.png" width= 40px height= 35px alt="envelope on pager"></img>
-      </div>
-      <div class="pager-img">
-        <img src="https://zupimages.net/up/20/39/tgbx.png" alt="old pager Motorola" width= 600px height= 400px></img>
-      </div>
+    <!--pager design-->
+    <div class="standby-screen" id="standby-screen"></div>
+    <div class="envelope" id="envelope">
+      <img src="https://zupimages.net/up/20/41/9fp4.png" width= 40px height= 35px alt="envelope on pager"></img>
+    </div>
+    <div class="pager-img">
+      <img src="https://zupimages.net/up/20/39/tgbx.png" alt="old pager Motorola" width= 600px height= 400px></img>
+    </div>
 
-      <!--pager date-->  
-      <div class="today" id="today">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.9.3/dayjs.min.js"></script>
-        <script src="lib/dayjs/plugin/localizedFormat.js"></script>
-        <script>
-          dayjs.extend(window.dayjs_plugin_localizedFormat)
-        </script>
-        <script>
-          function updateTime() {
-            const todayIs = document.querySelector(".today");
-            todayIs.innerHTML = dayjs().format('LT L')
-          }
-          setInterval(updateTime, 1000);
-        </script>
-      </div>
-
-      <!--screen light on scroll down-->
+    <!--pager date-->  
+    <div class="today" id="today">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.9.3/dayjs.min.js"></script>
+      <script src="lib/dayjs/plugin/localizedFormat.js"></script>
       <script>
-        // get the element to animate
-        const element = document.getElementById('standby-screen');
-        const elementHeight = element.clientHeight;
-
-        // listen for scroll event and call animate function
-        document.addEventListener('scroll', animate);
-        
-        // check if element is in view
-        function inView() {
-          // get window height
-          const windowHeight = window.innerHeight;
-          // get number of pixels that the document is scrolled
-          const scrollY = window.scrollY || window.pageYOffset;
-          // get current scroll position (distance from the top of the page to the bottom of the current viewport)
-          const scrollPosition = scrollY + windowHeight;
-          // get element position (distance from the top of the page to the bottom of the element)
-          const elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
-          // is scroll position greater than element position? (is element in view?)
-          if (scrollPosition > elementPosition) {
-            return true;
-          }  
-          return false;
-        }
-
-        // animate element when it is in view
-        function animate() {
-          // is element in view?
-          if (inView()) {
-              // element is in view, add class to element
-              element.classList.add('light-screen');
-          }
-        }
+        dayjs.extend(window.dayjs_plugin_localizedFormat)
       </script>
-
-      <!--edit text scrolling-->
-      <div class="scrolling-zone">
-        <div class="scrolling-text" id="scrolling-text">
-          Currently available for front-end project. Contact me!
-        </div>
-      </div>
-          
-      <!--envelope disappears + text appears on scroll down-->
       <script>
-        $(window).scroll(function() {
-          if ($(this).scrollTop()>3){
-              $('.envelope').hide();
-              $('.scrolling-text').show();
-          }
-        });
+        function updateTime() {
+          const todayIs = document.querySelector(".today");
+          todayIs.innerHTML = dayjs().format('LT L')
+        }
+        setInterval(updateTime, 1000);
       </script>
-    </section>
+    </div>
+
+    <!--screen light on scroll down-->
+    <script>
+      // get the element to animate
+      const element = document.getElementById('standby-screen');
+      const elementHeight = element.clientHeight;
+
+      // listen for scroll event and call animate function
+      document.addEventListener('scroll', animate);
       
-    <!--WORK SECTION-->
-    <section class="work" id="work">
-      <div class="section-title">Work</div>
-    </section>
+      // check if element is in view
+      function inView() {
+        // get window height
+        const windowHeight = window.innerHeight;
+        // get number of pixels that the document is scrolled
+        const scrollY = window.scrollY || window.pageYOffset;
+        // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+        const scrollPosition = scrollY + windowHeight;
+        // get element position (distance from the top of the page to the bottom of the element)
+        const elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
+        // is scroll position greater than element position? (is element in view?)
+        if (scrollPosition > elementPosition) {
+          return true;
+        }  
+        return false;
+      }
 
-    <!--ABOUT SECTION-->
-    <section class="about" id="about">
-      <div class="section-title">About</div>
-    </section>
+      // animate element when it is in view
+      function animate() {
+        // is element in view?
+        if (inView()) {
+            // element is in view, add class to element
+            element.classList.add('light-screen');
+        }
+      }
+    </script>
 
-  <!--CONTACT SECTION-->
-    <section class="contact" id="contact">
-      <div class="section-title">Contact.</div>
-    </section>
-  </div> 
+    <!--edit text scrolling-->
+    <div class="scrolling-zone">
+      <div class="scrolling-text" id="scrolling-text">
+        Currently available for front-end project. Contact me!
+      </div>
+    </div>
+        
+    <!--envelope disappears + text appears on scroll down-->
+    <script>
+      $(window).scroll(function() {
+        if ($(this).scrollTop()>3){
+            $('.envelope').hide();
+            $('.scrolling-text').show();
+        }
+      });
+    </script>
+  </section>
+    
+  <!--WORK SECTION-->
+  <section class="work" id="work">
+    <div class="section-title">Work</div>
+  </section>
+
+  <!--ABOUT SECTION-->
+  <section class="about" id="about">
+    <div class="section-title">About</div>
+  </section>
+
+<!--CONTACT SECTION-->
+  <section class="contact" id="contact">
+    <div class="section-title">Contact.</div>
+  </section>
 </body>
 </html>

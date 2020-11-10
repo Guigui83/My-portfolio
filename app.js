@@ -50,7 +50,6 @@ navSlide();
     $(".se-pre-con").fadeOut("slow");;
   });
 
-
 // HOVER LOGO NAVBAR
 $(function(){
   $("#home-button").on({
